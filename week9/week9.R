@@ -15,7 +15,7 @@ png(file="MultiLinearRegressiongraph.png")
 plot(result)
 dev.off()
 
-#Logistic Regression
+#Logistic Regression in different file named week9c.R
 
 #Poisson Regression
 input<-warpbreaks
@@ -23,4 +23,5 @@ print(head(input))
 plot(input)
 output<-glm(formula=breaks~wool+tension,data=warpbreaks,family="poisson")
 print(summary(output))
+
 plot(output)
